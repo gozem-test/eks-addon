@@ -17,7 +17,8 @@ variable "AWS_REGION" {
 
 variable "addons" {
   type = list(object({
-    name = string
+    name    = string
+    version = string
   }))
   description = "(Required) Name of the EKS add-on."
 }
